@@ -1,18 +1,21 @@
 ﻿/*
 
-Algorithm that converts a decimal number of less than nine million to an English language representation of that number.
+Algorithm to Convert Decimal Number to English Language Representation
 
-So for example:
+Input: A decimal number less than nine million.
 
-Given the input '3346780.54', the output should be "Three million, three hundred and forty six thousand, seven hundred and eighty, point fifty four.
+Output: An English language representation of the input number.
 
-Steps for algorithm:
-    Step 1: check for decimal point in number.
-    Step 2: Split number on decimal point and call function to convert to string.
-    Step 3: In function to converto string take chunks of three digit from number and create strings of number based on their decimal position.
-    Step 4: Merge string of letter before and after decimal points based on if they have value before and after desimal position.
-    Step 5: Capitilise initial character.
-    Step 6: Print result.
+Steps:
+
+step 1: Check if the input number contains a decimal point.
+step 2: If there is a decimal point, split the number into its integer and decimal parts.
+step 3: Create a function to convert a number (up to three digits) to its English language representation.
+step 4: In the conversion function, take chunks of three digits from the integer part of the number and create strings for each chunk based on their decimal position (i.e., units, thousands, millions).
+step 5: Merge the strings for the chunks, ensuring proper punctuation and formatting (e.g., using commas and "and" appropriately).
+step 6: If there is a decimal part, convert it to its English representation.
+step 7: Capitalize the initial character of the resulting representation.
+step 8: Print or return the final English representation of the input number.
 
 
 */
